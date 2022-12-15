@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-gray-800 text-slate-200;
+    }
+    input,
+    textarea {
+        @apply bg-gray-800 text-white;
+    }
+}
+
+/* table th, table td{
+    border:1px solid black;
+}
+
+table {
+    border-collapse:collapse ;
+}
+body{
+    background-color: beige;
+} */
+
+
+table, th, td {
+    border: 1px solid black;
+  }
+  .center{
+          margin: auto;
+          height: 600px;
+          width: 750px;
+          border: 3px solid #374816;
+          padding: 10px;
+      }
+      body {
+    background-color: #fdfdfe;
+  }
+  span{
+          display: inline-block;
+          width: 100px;
+          color: #000000;
+      }
+
+      .button{
+        background-color: #9773ed;
+      text-align: center;
+      width: 100px;
+      height: 30px;
+
+
+  }
+  .button1 {
+      background-color: #36ef42;
+      margin:auto;
+    display:block;
+
+      }
+
+      .button2 {
+      background-color: #f44b31;
+      margin:auto;
+    display:block;
+
+      }
+      input {
+        background-color: rgb(0, 0, 0);
+      }
+
+/* for navbar */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+}
+
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+		transform: translateY(-100vh);
+	}
+
+	header .responsive_nav {
+		transform: none;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}
+.text{
+    margin: auto;
+          height: 600px;
+          width: 1500px;
+          padding: 10px;
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+}
+
+.profile_image{
+    margin: auto;
+    height: 300px;
+    width: 300px;
+
+}
+.searchbar{
+    background-color: antiquewhite;
+    color: #000000;
+  }
